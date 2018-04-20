@@ -417,18 +417,7 @@ F 3 "" H 4000 1700 50  0001 C CNN
 	1    4000 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R?
-U 1 1 5AD70BC0
-P 4500 1000
-F 0 "R?" V 4580 1000 50  0000 C CNN
-F 1 "10K" V 4500 1000 50  0000 C CNN
-F 2 "" V 4430 1000 50  0001 C CNN
-F 3 "" H 4500 1000 50  0001 C CNN
-	1    4500 1000
-	0    1    1    0   
-$EndComp
-Text GLabel 4900 1000 2    60   Input ~ 0
+Text GLabel 5150 1450 2    60   Input ~ 0
 VCC
 Text GLabel 8950 4000 0    60   Input ~ 0
 VCC
@@ -452,17 +441,6 @@ F 1 "Audio-Jack-2" H 1775 825 50  0000 C CNN
 F 2 "" H 2050 1000 50  0001 C CNN
 F 3 "" H 2050 1000 50  0001 C CNN
 	1    1800 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L MC7805ABD2T U?
-U 1 1 5AD7334E
-P 3550 1000
-F 0 "U?" H 3400 1125 50  0000 C CNN
-F 1 "MC7805ABD2T" H 3550 1125 50  0000 L CNN
-F 2 "" H 3575 850 50  0001 L CIN
-F 3 "" H 3550 950 50  0001 C CNN
-	1    3550 1000
 	1    0    0    -1  
 $EndComp
 Text Notes 3400 2550 0    60   ~ 0
@@ -574,28 +552,11 @@ Wire Notes Line
 Wire Notes Line
 	1550 6750 1550 5850
 Wire Wire Line
-	2450 1000 3250 1000
-Wire Wire Line
-	2550 1300 2550 1000
-Connection ~ 2550 1000
-Wire Wire Line
-	3100 1000 3100 1300
-Connection ~ 3100 1000
-Wire Wire Line
-	3850 1000 4350 1000
-Wire Wire Line
-	4000 1000 4000 1300
-Wire Wire Line
-	3550 1300 3550 1400
-Wire Wire Line
 	3100 1600 3100 1700
 Wire Wire Line
 	2550 1600 2550 1700
 Wire Wire Line
 	4000 1600 4000 1700
-Connection ~ 4000 1000
-Wire Wire Line
-	4650 1000 4900 1000
 Wire Wire Line
 	8950 3850 9400 3850
 Wire Wire Line
@@ -633,14 +594,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 1100 2150 1250
 Wire Notes Line
-	1100 700  5250 700 
-Wire Notes Line
-	5250 700  5250 2050
-Wire Notes Line
-	5250 2050 1100 2050
-Wire Notes Line
-	1100 2050 1100 700 
-Wire Notes Line
 	3350 2400 7300 2400
 Wire Notes Line
 	7300 2400 7300 6000
@@ -674,4 +627,95 @@ Wire Notes Line
 	10350 5600 8550 5600
 Wire Notes Line
 	8550 5600 8550 3500
+$Comp
+L D D?
+U 1 1 5AD84211
+P 4800 1450
+F 0 "D?" H 4800 1550 50  0000 C CNN
+F 1 "ES2D" H 4800 1350 50  0000 C CNN
+F 2 "" H 4800 1450 50  0001 C CNN
+F 3 "" H 4800 1450 50  0001 C CNN
+	1    4800 1450
+	-1   0    0    1   
+$EndComp
+Connection ~ 2550 1000
+Wire Wire Line
+	2550 1300 2550 1000
+Connection ~ 3100 1000
+Wire Wire Line
+	3100 1000 3100 1300
+Wire Wire Line
+	2450 1000 3250 1000
+Wire Wire Line
+	3550 1300 3550 1400
+$Comp
+L MC7805ABD2T U?
+U 1 1 5AD7334E
+P 3550 1000
+F 0 "U?" H 3400 1125 50  0000 C CNN
+F 1 "MC7805ABD2T" H 3550 1125 50  0000 L CNN
+F 2 "" H 3575 850 50  0001 L CIN
+F 3 "" H 3550 950 50  0001 C CNN
+	1    3550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5AD85C6A
+P 4400 1200
+F 0 "R?" V 4480 1200 50  0000 C CNN
+F 1 "470" V 4400 1200 50  0000 C CNN
+F 2 "" V 4330 1200 50  0001 C CNN
+F 3 "" H 4400 1200 50  0001 C CNN
+	1    4400 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AD85DF3
+P 4400 1700
+F 0 "R?" V 4480 1700 50  0000 C CNN
+F 1 "2,2k" V 4400 1700 50  0000 C CNN
+F 2 "" V 4330 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AD85E4B
+P 4400 1950
+F 0 "#PWR?" H 4400 1700 50  0001 C CNN
+F 1 "GND" H 4400 1800 50  0000 C CNN
+F 2 "" H 4400 1950 50  0001 C CNN
+F 3 "" H 4400 1950 50  0001 C CNN
+	1    4400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1000 4400 1000
+Wire Wire Line
+	4400 1000 4400 1050
+Wire Wire Line
+	4400 1350 4400 1550
+Wire Wire Line
+	4650 1450 4400 1450
+Connection ~ 4400 1450
+Wire Wire Line
+	4000 1300 4000 1000
+Connection ~ 4000 1000
+Wire Wire Line
+	4400 1850 4400 1950
+Wire Wire Line
+	4950 1450 5150 1450
+Text Notes 5200 1300 0    60   ~ 0
+3.3V
+Wire Notes Line
+	1100 700  5500 700 
+Wire Notes Line
+	5500 700  5500 2150
+Wire Notes Line
+	5500 2150 1100 2150
+Wire Notes Line
+	1100 2150 1100 700 
 $EndSCHEMATC
