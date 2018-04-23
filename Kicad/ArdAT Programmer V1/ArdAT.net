@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:/Users/PORTABLE/Documents/GitProjets/Fablab19-Alex-Arduino-Attiny-Prog-Projet/Kicad/ArdAT Programmer V1/ArdAT.sch")
-    (date "22/04/2018 14:46:24")
+    (date "23/04/2018 14:16:11")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -119,7 +119,7 @@
       (tstamp 5AD71538))
     (comp (ref J1)
       (value Audio-Jack-2)
-      (footprint alex-library:Connect-2pin)
+      (footprint alex-library:Connecteur-Embase-Debrochable-2_Voies)
       (libsource (lib conn) (part Audio-Jack-2))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AD72DC0))
@@ -317,12 +317,12 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical alex-library)
-      (uri C:\Users\PORTABLE\Documents\GitProjets\Fablab19-Alex-Kicad-Library\alex-ibrary\alex-library.lib))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical alex-library)
+      (uri C:\Users\PORTABLE\Documents\GitProjets\Fablab19-Alex-Kicad-Library\alex-ibrary\alex-library.lib)))
   (nets
     (net (code 1) (name "Net-(R5-Pad2)")
       (node (ref UC1) (pin 12))

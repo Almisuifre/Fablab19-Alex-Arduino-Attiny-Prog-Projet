@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:alex-library
-LIBS:ArdAT-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -427,7 +426,7 @@ U 1 1 5AD72DC0
 P 1750 1100
 F 0 "J1" H 1725 1175 50  0000 C CNN
 F 1 "Audio-Jack-2" H 1725 925 50  0000 C CNN
-F 2 "alex-library:Connect-2pin" H 2000 1100 50  0001 C CNN
+F 2 "alex-library:Connecteur-Embase-Debrochable-2_Voies" H 2000 1100 50  0001 C CNN
 F 3 "" H 2000 1100 50  0001 C CNN
 	1    1750 1100
 	1    0    0    -1  
